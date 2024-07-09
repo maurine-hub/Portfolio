@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio_Tailwind</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style type="text/tailwindcss">
+        .bouton{
+            @apply text-lg text-white font-bold capitalize  pt-2 pb-2 pr-3 pl-3 rounded-lg;
+        }
+        .icone{
+            color: rgb(16 185 129); background-color: #ffffff; border-radius: 80px; padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex w-full h-screen">
+        <div class="w-1/4 bg-emerald-500 h-auto overflow-y-auto">
+            <div class="text-center p-10 ">
+                <p class="text-2xl text-white font-bold capitalize pb-7">simon doe</p>
+                <img src="profile.png" alt="" class=" w-3/4 mb-4 ">
+                <p class="text-sm pb-2  text-white ">Hi, my name is Simon Doe and I'm a senior software engineer. Welcome to my personal website!</p>
+
+                <div class="w-full">
+                    <ul class="flex w-full justify-between mb-10 mt-6 ">
+                        <li><a href="#"><i class="fa-brands fa-twitter icone"></i></a></li>
+                        <li><a href="#" class="bg-white w-20 rounded-full icone"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#" class="bg-white w-20 rounded-full icone"><i class="fa-brands fa-spotify"></i></a></li>
+                        <li><a href="#" class="bg-white w-20 rounded-full icone"><i class="fa-brands fa-stack-overflow"></i></a></li>
+                        <li><a href="#" class="bg-white w-20 rounded-full icone"><i class="fa-brands fa-codepen"></i></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="text-zinc-200 text-lg font-semibold capitalize text-start">
+                        <li class="hover:text-emerald-800 pb-4"><a href="#"><i class="fa-solid fa-user" style="color: #fffc; margin-right:12px ;"></i>about me</a></li>
+                        <li class="hover:text-emerald-800 pb-4"><a href="#"><i class="fa-solid fa-laptop-code" style="color: #fffc ;margin-right:12px"></i></i>portfolio</a></li>
+                        <li class="hover:text-emerald-800 pb-4"><a href="#"><i class="fa-solid fa-briefcase" style="color: #fffc; margin-right:12px"></i>services & pricing</a></li>
+                        <li class="hover:text-emerald-800 pb-4"><a href="#"><i class="fa-solid fa-file-lines" style="color: #fffc; margin-right:12px"></i>resume</a></li>
+                        <li class="hover:text-emerald-800 pb-4"><a href="#"><i class="fa-solid fa-blog" style="color: #fffc; margin-right:12px"></i>blog</a></li>
+                        <li class="hover:text-emerald-800 pb-4"><a href="#"><i class="fa-solid fa-address-card" style="color: #fffc; margin-right:12px"></i>contact</a></li>
+                        <li class="hover:text-emerald-800 pb-4"><a href="#"><i class="fa-solid fa-gears" style="color: #fffc; margin-right:12px"></i>more pages 
+                            <select name="" id="" >
+                                <option value=""></option>
+                            </select></a>
+                        </li>
+                    </ul>
+
+                    <button class="bg-emerald-700 rounded-lg text-white text-lg capitalize font-semibold p-4 mb-2 mt-4"><a href="#"><i class="fa-solid fa-paper-plane" style="color: #ffffff ;margin-right:7px;"></i>hire me</a></button>
+                </div>
+                              
+            </div>
+            
+        </div>
+
+        <div class="w-3/4 ">
+            <div class="flex w-full h-auto bg-gray-100  pt-16 pb-16 pl-16">
+                <div class="w-4/6 ">
+                    <h1 class="text-5xl text-black capitalize font-bold pb-4">simon doe</h1>
+                    <p class="text-2xl text-zinc-600 font-light capitalize pb-4">senior software engineer</p>
+                    <p class="text-base text-zinc-600 w-4/5">I'm a software engineer specialised in frontend and backend development for complex scalable web apps. I write about software development on my blog. Want to know how I may help your project? Check out my project portfolio and online resume.</p>
+
+                    <div class="mt-10">
+                        <button><a href="#" class="bouton bg-emerald-500">view portfolio</a></button>
+                        <button><a href="#" class="bouton bg-slate-800 ml-3">view resume</a></button>
+                    </div>
+                </div>
+
+                <div class=" w-2/6 bg-[url('profile-lg.jpg')] bg-right bg-no-repeat bg-cover">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
