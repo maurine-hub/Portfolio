@@ -18,8 +18,9 @@
 </head>
 <body>
     <div class="flex w-full h-screen">
-        <div class="w-1/4 bg-emerald-500 h-auto overflow-y-auto">
-            <div class="text-center p-10 ">
+        
+        <div class="w-1/4 bg-emerald-500 h-auto overflow-y-auto md:max-lg:hidden max-md:hidden">
+            <div class="text-center p-10 "> 
                 <p class="text-2xl text-white font-bold capitalize pb-7">simon doe</p>
                 <img src="profile.png" alt="" class=" w-3/4 mb-4 ">
                 <p class="text-sm pb-2  text-white ">Hi, my name is Simon Doe and I'm a senior software engineer. Welcome to my personal website!</p>
@@ -56,56 +57,90 @@
             
         </div>
 
-        <div class="w-3/4  overflow-y-auto">
-            <div class="flex w-full h-auto bg-gray-100  pt-16 pb-16 pl-16">
-                <div class="w-4/6 ">
-                    <h1 class="text-5xl text-black capitalize font-bold pb-4">simon doe</h1>
+        <div class="w-3/4  overflow-y-auto md:max-lg:w-full max-md:w-full ">
+              <!-- navbar lors du responsive -->
+            <div class="flex justify-between hidden bg-emerald-500 p-4  h-auto relative md:max-lg:flex w-full max-md:flex w-full">
+                <a href="" class="text-white p-2">&#9776;</a>
+                <h1 class="text-2xl text-white capitalize font-bold absolute right-1/2">simon doe</h1>
+            </div>
+            <!-- ---------------fin------------- -->
+
+            <div class="flex w-full h-auto bg-gray-100  py-16  pl-16 md:max-lg:px-16 max-md:p-6">
+                <div class=" w-4/6 md:max-lg:w-4/6 max-md:w-full">
+                    <h1 class="text-5xl text-black capitalize font-bold pb-4 ">simon doe</h1>
                     <p class="text-2xl text-zinc-600 font-light capitalize pb-4">senior software engineer</p>
                     <p class="text-base text-zinc-600 w-4/5">I'm a software engineer specialised in frontend and backend development for complex scalable web apps. I write about software development on my blog. Want to know how I may help your project? Check out my project portfolio and online resume.</p>
 
-                    <div class="mt-10">
+                    <div class="my-10"> 
                         <button><a href="#" class="bouton bg-emerald-500">view portfolio</a></button>
                         <button><a href="#" class="bouton bg-slate-800 ml-3">view resume</a></button>
                     </div>
+
+                    <div class="hidden max-md:flex w-1/2 ">
+                        <img src="profile-lg.jpg" alt="">
+                    </div>
                 </div>
 
-                <div class=" w-2/6 bg-[url('profile-lg.jpg')] bg-right bg-no-repeat bg-cover">
+                <!-- <div class=" w-2/6 bg-[url('profile-lg.jpg')] bg-right bg-no-repeat bg-cover md:max-lg:hidden max-sm:max-md:hidden">
                     
+                </div> -->
+                <div class="w-2/6 md:max-lg:w-2/6 max-md:hidden">
+                    <img src="profile-lg.jpg" alt="">
                 </div>
             </div>
 
-            <div class="p-16">
-                <h1>what i do</h1>
-                <p>I have more than 10 years' experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
+            <div class="pl-14 mt-10 md:max-lg:mx-16 max-md:pl-2 w-full mx-4 ">
+                <h1 class="text-3xl capitalize mb-4 pl-6 font-bold border-l-emerald-500 border-8 border-b-transparent border-t-transparent border-r-transparent">what i do</h1>
+                <p class="text-gray-600 text-base  max-md:mr-6">I have more than 10 years' experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
 
-                <div class="flex w-full flex-wrap">
-                    <div class="pr-8 mt-7 w-48">
+                <div class="flex  w-full flex-wrap">
+                    <div class="pr-10 mt-12 w-48 md:max-lg:w-1/2 max-sm:max-md:w-1/2 ">
                         <a href=""><i class="fa-solid fa-address-card"></i></a>
-                        <h1 class="text-base font-bold capitalize">vanilla javasript</h1>
-                        <p>List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                        <h1 class="text-base font-bold capitalize mb-1">vanilla javasript</h1>
+                        <p class="text-sm text-gray-600 ">List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                     </div>
-                    <div class="pr-8 mt-7 w-48">
+                    <div class="pr-10 mt-12 w-48 md:max-lg:w-1/2 max-sm:max-md:w-1/2 ">
                         <a href=""><i class="fa-solid fa-address-card"></i></a>
-                        <h1 class="text-base font-bold capitalize">vanilla javasript</h1>
-                        <p>List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                        <h1 class="text-base font-bold capitalize mb-1">vanilla javasript</h1>
+                        <p class="text-sm text-gray-600 ">List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                     </div>
-                    <div class="pr-8 mt-7 w-48">
+                    <div class="pr-10 mt-12 w-48 md:max-lg:w-1/2 max-sm:max-md:w-1/2 ">
                         <a href=""><i class="fa-solid fa-address-card"></i></a>
-                        <h1 class="text-base font-bold capitalize">vanilla javasript</h1>
-                        <p>List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                        <h1 class="text-base font-bold capitalize mb-1">vanilla javasript</h1>
+                        <p class="text-sm text-gray-600 ">List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                     </div>
-                    <div class="pr-8 mt-7 w-48">
+                    <div class="pr-10 mt-12 w-48 md:max-lg:w-1/2 max-sm:max-md:w-1/2 ">
                         <a href=""><i class="fa-solid fa-address-card"></i></a>
-                        <h1 class="text-base font-bold capitalize">vanilla javasript</h1>
-                        <p>List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                        <h1 class="text-base font-bold capitalize mb-1">vanilla javasript</h1>
+                        <p class="text-sm text-gray-600 ">List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                     </div>
-                    <div class="pr-8 mt-7 w-48">
+                    <div class="pr-10 mt-12 w-48 md:max-lg:w-1/2 max-sm:max-md:w-1/2 ">
                         <a href=""><i class="fa-solid fa-address-card"></i></a>
-                        <h1 class="text-base font-bold capitalize">vanilla javasript</h1>
-                        <p>List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                        <h1 class="text-base font-bold capitalize mb-1">vanilla javasript</h1>
+                        <p class="text-sm text-gray-600 ">List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                    <div class="pr-10 mt-12 w-48 md:max-lg:w-1/2 max-sm:max-md:w-1/2 ">
+                        <a href=""><i class="fa-solid fa-address-card"></i></a>
+                        <h1 class="text-base font-bold capitalize mb-1">vanilla javasript</h1>
+                        <p class="text-sm text-gray-600 ">List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                    <div class="pr-10 mt-12 w-48 md:max-lg:w-1/2 max-sm:max-md:w-1/2 ">
+                        <a href=""><i class="fa-solid fa-address-card"></i></a>
+                        <h1 class="text-base font-bold capitalize mb-1">vanilla javasript</h1>
+                        <p class="text-sm text-gray-600 ">List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                    <div class="pr-10 mt-12 w-48 md:max-lg:w-1/2 max-sm:max-md:w-1/2 ">
+                        <a href=""><i class="fa-solid fa-address-card"></i></a>
+                        <h1 class="text-base font-bold capitalize mb-1">vanilla javasript</h1>
+                        <p class="text-sm text-gray-600 ">List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
                     </div>
 
                 </div>
+                <div class="flex justify-center mt-10">
+                    <button class="bg-emerald-500 rounded-lg text-white text-lg capitalize font-semibold p-4 mb-2 mt-4"><a href="#"><i class="fa-solid fa-paper-plane" style="color: #ffffff ;margin-right:7px;"></i>services & pricing</a></button>
+                </div>
+
+
             </div>
         </div>
     </div>
